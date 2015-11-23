@@ -1,5 +1,6 @@
 library(nnet)
 
+sink("output.log", type="output")
 args <- commandArgs(trailingOnly = TRUE)
 #args <- c("../data/htk-smaller.csv", 10, 10)
 data <- read.csv(args[1], F, strip.white=T)
